@@ -1,0 +1,164 @@
+/*Criando variáveis no root que abranje todo o projeto representando o <HTML>*/
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #0000CD;
+    --preto: #ffffff;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+    --amarelo: #4740af;
+    --verde: #082b04;
+    --plano-fundo: #010108;
+}
+
+body {
+    background: linear-gradient(90deg, #0984e3, #f34a3d);
+    color: var(--preto);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*Selecionando todos os elementos (*) // Padding define a distancia entre o conteúdo de um elemento e suas bordas*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("nrDVu1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+/*Determina a altura da área do contéudo do elemento// vh:todo o espaço da página*/
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--amarelo);
+    border-radius: 5px;                /*Modificando as bordas para que elas fiquem arredondadas*/
+    padding: 1em;                      /*Margem interna// 1em é o tamanho da fonte*/
+    color: #ffffff;               /*Cor fonte*/
+    font-weight: bold;
+    display: block;                    /*Alinando o botão*/
+    text-decoration: none;             /*Retirando a decoração do texto*/
+    margin-bottom: 1em;                /*Margem entre os botões*/
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--plano-fundo);
+}
+
+.container__aviso {
+    font-size: 14px;
+    color: var(--preto);
+    font-weight: bold;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 2em;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.container__imagem {           /*Criando espaçamentos*/
+    margin: 1em 0 2em 0;      /*Relógio sentido horário: margem no topo, lado direito, abaixo e esquerdo  */
+}
+
+.container__caixa {
+    margin: 0 6em;            /*0: topo e embaixo, 6em: esquerda e direita*/
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--amarelo);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--branco-principal);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--preto);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--preto);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--preto);
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--preto);
+}
